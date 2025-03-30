@@ -2,11 +2,7 @@ import { useState } from 'react'
 import GetGreeting from './greetingsTypes/greetingsTypes'
 import './header.css'
 
-const Header = (props: 
-    { 
-        userName: string 
-    }
-) => {
+const Header = (props:{userName: string}) => {
 
   return (
     <>

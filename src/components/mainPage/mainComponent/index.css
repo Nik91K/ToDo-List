@@ -1,0 +1,22 @@
+.task-list{
+    list-style: none;
+    color: #fff;
+}
+
+.li-task-list{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.task-list-completed{
+    text-decoration: line-through;
+    color: rgb(120, 120, 120);
+}
+
+.checkbox-task-list{
+    border: 5px solid #fff;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+
+}

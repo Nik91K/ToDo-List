@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { TodoType } from '../../types/dataTypes';
 import Title from './title/index';
 import MainComponent from './mainComponent/index'
+import './index.css'
 
 const ToDoList = () => {
     const [text, setText] = useState("");
@@ -20,20 +21,21 @@ const ToDoList = () => {
     };
     
     return (
-        <>
+        <div className='main-list-page'>
             <Title>
+                <MainComponent tasks={tasks} />
                 <input 
+                    className='add-task-input'
                     type="text" 
                     placeholder="Enter a new task" 
                     value={text}
                     onChange={(e) => setText(e.target.value)}
                 />
-                <button onClick={handleClick} className=''>
+                <button onClick={handleClick} className='add-task-button'>
                     Add Task
                 </button>
             </Title>
-            <MainComponent tasks={tasks} />
-        </>
+        </div>
 
 
     );
