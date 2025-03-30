@@ -1,0 +1,7 @@
+.greetings-h2{
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-size: 35px;
+}
