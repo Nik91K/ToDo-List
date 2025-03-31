@@ -23,7 +23,6 @@ const ToDoList = () => {
     return (
         <div className='main-list-page'>
             <Title>
-                <MainComponent tasks={tasks} />
                 <input 
                     className='add-task-input'
                     type="text" 
@@ -34,6 +33,7 @@ const ToDoList = () => {
                 <button onClick={handleClick} className='add-task-button'>
                     Add Task
                 </button>
+                <MainComponent tasks={tasks} />
             </Title>
         </div>
 

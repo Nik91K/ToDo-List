@@ -8,7 +8,9 @@ const App = () => {
   return (
     <>
       <Header userName='User' />
-      <ToDoList />
+      <div className='todo-list'>
+        <ToDoList />
+      </div>
     </>
   )
 }
