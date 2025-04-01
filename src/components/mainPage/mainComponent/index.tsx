@@ -2,9 +2,7 @@ import { useState } from "react";
 import { TodoType } from "../../../types/dataTypes";
 import './index.css';
 
-const MainComponent = ({ tasks }: { tasks: TodoType[] }) => {
-    // : deleteTask
-    // const [tasks, setTasks] = useState<TodoType[]>(deleteTask)
+const MainComponent = ({ tasks, setTasks }: { tasks: TodoType[], setTasks: Function }) => {
     const [checkedTasks, setCheckboxComplete] = useState<{ [key: number]: boolean }>({});
     const checkboxComplete = (taskId: number) => {
         setCheckboxComplete((prev) => ({
@@ -14,7 +12,7 @@ const MainComponent = ({ tasks }: { tasks: TodoType[] }) => {
 
     function handleDelete(taskId: number) {
         console.log('завдання Ід видалено', taskId)
-        // setTasks(tasks.filter((t) => t.id !== taskId))
+        setTasks(tasks.filter((t) => t.id !== taskId))
     }
     
     return (

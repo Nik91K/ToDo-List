@@ -33,7 +33,7 @@ const ToDoList = () => {
                 <button onClick={handleClick} className='add-task-button'>
                     Add Task
                 </button>
-                <MainComponent tasks={tasks} />
+                <MainComponent tasks={tasks} setTasks={setTasks} />
             </Title>
         </div>
 
